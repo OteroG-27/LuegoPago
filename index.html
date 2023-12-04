@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Espacios Disponibles</title>
 </head>
 <body>
-    
+  <h1>Consulta Los Espacios Disponibles</h1>
+  <form id="consultaForm">
+    <label for="dia">Seleccione un día:</label>
+    <select id="dia" name="dia">
+      <option value="lunes">lunes</option>
+      <option value="martes">martes</option>
+      <option value="miércoles">miércoles</option>
+      <option value="jueves">jueves</option>
+      <option value="viernes">viernes</option>
+    </select>
+    <button type="button" onclick="consultarIntervalos()">Consultar</button>
+  </form>
+  <div id="resultados">
+    <p>Espacios disponibles</p>
+  </div>
 </body>
 </html>
